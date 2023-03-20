@@ -9,18 +9,24 @@
 /* Begin PBXBuildFile section */
 		1C4FB83A29C06D3300C326DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB83929C06D3300C326DC /* AppDelegate.swift */; };
 		1C4FB83C29C06D3300C326DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB83B29C06D3300C326DC /* ContentView.swift */; };
-		1C4FB83E29C06D3300C326DC /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB83D29C06D3300C326DC /* Experience.rcproject */; };
 		1C4FB84029C06D3300C326DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB83F29C06D3300C326DC /* Assets.xcassets */; };
 		1C4FB84329C06D3300C326DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84229C06D3300C326DC /* Preview Assets.xcassets */; };
+		1C4FB84B29C06D9600C326DC /* HairLocatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB84A29C06D9600C326DC /* HairLocatorView.swift */; };
+		1C4FB84D29C06E1800C326DC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84C29C06E1800C326DC /* art.scnassets */; };
+		1C4FB85029C06F2F00C326DC /* hair01.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84E29C06EEB00C326DC /* hair01.scn */; };
+		1C4FB85129C06F2F00C326DC /* head.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84F29C06EF000C326DC /* head.scn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C4FB83629C06D3300C326DC /* AIHairTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIHairTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4FB83929C06D3300C326DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C4FB83B29C06D3300C326DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1C4FB83D29C06D3300C326DC /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		1C4FB83F29C06D3300C326DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4FB84229C06D3300C326DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1C4FB84A29C06D9600C326DC /* HairLocatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HairLocatorView.swift; sourceTree = "<group>"; };
+		1C4FB84C29C06E1800C326DC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		1C4FB84E29C06EEB00C326DC /* hair01.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hair01.scn; sourceTree = "<group>"; };
+		1C4FB84F29C06EF000C326DC /* head.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = head.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +59,13 @@
 		1C4FB83829C06D3300C326DC /* AIHairTry */ = {
 			isa = PBXGroup;
 			children = (
+				1C4FB84E29C06EEB00C326DC /* hair01.scn */,
+				1C4FB84F29C06EF000C326DC /* head.scn */,
+				1C4FB84929C06D7100C326DC /* Views */,
 				1C4FB83929C06D3300C326DC /* AppDelegate.swift */,
-				1C4FB83B29C06D3300C326DC /* ContentView.swift */,
-				1C4FB83D29C06D3300C326DC /* Experience.rcproject */,
 				1C4FB83F29C06D3300C326DC /* Assets.xcassets */,
 				1C4FB84129C06D3300C326DC /* Preview Content */,
+				1C4FB84C29C06E1800C326DC /* art.scnassets */,
 			);
 			path = AIHairTry;
 			sourceTree = "<group>";
@@ -68,6 +76,15 @@
 				1C4FB84229C06D3300C326DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1C4FB84929C06D7100C326DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1C4FB83B29C06D3300C326DC /* ContentView.swift */,
+				1C4FB84A29C06D9600C326DC /* HairLocatorView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +145,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4FB85029C06F2F00C326DC /* hair01.scn in Resources */,
+				1C4FB85129C06F2F00C326DC /* head.scn in Resources */,
 				1C4FB84329C06D3300C326DC /* Preview Assets.xcassets in Resources */,
+				1C4FB84D29C06E1800C326DC /* art.scnassets in Resources */,
 				1C4FB84029C06D3300C326DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +162,7 @@
 			files = (
 				1C4FB83C29C06D3300C326DC /* ContentView.swift in Sources */,
 				1C4FB83A29C06D3300C326DC /* AppDelegate.swift in Sources */,
-				1C4FB83E29C06D3300C326DC /* Experience.rcproject in Sources */,
+				1C4FB84B29C06D9600C326DC /* HairLocatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +301,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +333,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
