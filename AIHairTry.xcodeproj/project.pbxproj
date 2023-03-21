@@ -15,6 +15,12 @@
 		1C4FB84D29C06E1800C326DC /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84C29C06E1800C326DC /* art.scnassets */; };
 		1C4FB85029C06F2F00C326DC /* hair01.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84E29C06EEB00C326DC /* hair01.scn */; };
 		1C4FB85129C06F2F00C326DC /* head.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1C4FB84F29C06EF000C326DC /* head.scn */; };
+		1C4FB85629C8FE7500C326DC /* Camera-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 1C4FB85529C8FE7500C326DC /* Camera-SwiftUI */; };
+		1C4FB85829C8FEC500C326DC /* CaptureHairImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB85729C8FEC500C326DC /* CaptureHairImageView.swift */; };
+		1C4FB85B29C9CE3400C326DC /* CameraServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB85A29C9CE3400C326DC /* CameraServiceAdapter.swift */; };
+		1C4FB85D29CA130800C326DC /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB85C29CA130800C326DC /* FileService.swift */; };
+		1C4FB85F29CA24C200C326DC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB85E29CA24C200C326DC /* Utils.swift */; };
+		1C4FB86129CA357E00C326DC /* MyCameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FB86029CA357E00C326DC /* MyCameraPreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,11 @@
 		1C4FB84C29C06E1800C326DC /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		1C4FB84E29C06EEB00C326DC /* hair01.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = hair01.scn; sourceTree = "<group>"; };
 		1C4FB84F29C06EF000C326DC /* head.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = head.scn; sourceTree = "<group>"; };
+		1C4FB85729C8FEC500C326DC /* CaptureHairImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureHairImageView.swift; sourceTree = "<group>"; };
+		1C4FB85A29C9CE3400C326DC /* CameraServiceAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceAdapter.swift; sourceTree = "<group>"; };
+		1C4FB85C29CA130800C326DC /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		1C4FB85E29CA24C200C326DC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		1C4FB86029CA357E00C326DC /* MyCameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCameraPreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4FB85629C8FE7500C326DC /* Camera-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,7 @@
 		1C4FB83829C06D3300C326DC /* AIHairTry */ = {
 			isa = PBXGroup;
 			children = (
+				1C4FB85929C9CE2300C326DC /* Services */,
 				1C4FB84E29C06EEB00C326DC /* hair01.scn */,
 				1C4FB84F29C06EF000C326DC /* head.scn */,
 				1C4FB84929C06D7100C326DC /* Views */,
@@ -83,8 +96,20 @@
 			children = (
 				1C4FB83B29C06D3300C326DC /* ContentView.swift */,
 				1C4FB84A29C06D9600C326DC /* HairLocatorView.swift */,
+				1C4FB85729C8FEC500C326DC /* CaptureHairImageView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1C4FB85929C9CE2300C326DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1C4FB85A29C9CE3400C326DC /* CameraServiceAdapter.swift */,
+				1C4FB85C29CA130800C326DC /* FileService.swift */,
+				1C4FB85E29CA24C200C326DC /* Utils.swift */,
+				1C4FB86029CA357E00C326DC /* MyCameraPreview.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +128,9 @@
 			dependencies = (
 			);
 			name = AIHairTry;
+			packageProductDependencies = (
+				1C4FB85529C8FE7500C326DC /* Camera-SwiftUI */,
+			);
 			productName = AIHairTry;
 			productReference = 1C4FB83629C06D3300C326DC /* AIHairTry.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 1C4FB82D29C06D3300C326DC;
+			packageReferences = (
+				1C4FB85429C8FE7500C326DC /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */,
+			);
 			productRefGroup = 1C4FB83729C06D3300C326DC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,8 +192,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C4FB83C29C06D3300C326DC /* ContentView.swift in Sources */,
+				1C4FB86129CA357E00C326DC /* MyCameraPreview.swift in Sources */,
 				1C4FB83A29C06D3300C326DC /* AppDelegate.swift in Sources */,
 				1C4FB84B29C06D9600C326DC /* HairLocatorView.swift in Sources */,
+				1C4FB85F29CA24C200C326DC /* Utils.swift in Sources */,
+				1C4FB85D29CA130800C326DC /* FileService.swift in Sources */,
+				1C4FB85829C8FEC500C326DC /* CaptureHairImageView.swift in Sources */,
+				1C4FB85B29C9CE3400C326DC /* CameraServiceAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C4FB85429C8FE7500C326DC /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rorodriguez116/Camera-SwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C4FB85529C8FE7500C326DC /* Camera-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C4FB85429C8FE7500C326DC /* XCRemoteSwiftPackageReference "Camera-SwiftUI" */;
+			productName = "Camera-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C4FB82E29C06D3300C326DC /* Project object */;
 }

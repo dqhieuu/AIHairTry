@@ -19,15 +19,14 @@ struct HairLocatorAR: UIViewRepresentable {
 
     func makeUIView(context: Context) -> ARSCNView {
         let arView = ARSCNView(frame: .zero)
+        CameraSessions.ar=arView.session
         
         arView.delegate = context.coordinator
         
         let arConfig = ARFaceTrackingConfiguration()
         arConfig.isWorldTrackingEnabled = true
-//        arConfig.isLightEstimationEnabled = true
 
         arView.session.run(arConfig)
-    
 
         return arView
     }
